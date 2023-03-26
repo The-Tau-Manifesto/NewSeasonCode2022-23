@@ -27,7 +27,7 @@ public class LeftCompCode extends LinearOpMode {
     int START_TICKS = (int)(271/1.5);
     int INTAKE_TICKS = 0;
     int LOW_TICKS = (int)(2063/1.5);
-    int MID_TICKS = (int)(3300/1.5);
+    int MID_TICKS = (int)(3400/1.5);
     int HIGH_TICKS = (int)(4900/1.5);
 
 

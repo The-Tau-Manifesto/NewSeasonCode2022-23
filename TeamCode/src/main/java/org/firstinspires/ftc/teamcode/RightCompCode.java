@@ -31,7 +31,7 @@ public class RightCompCode extends LinearOpMode {
     int START_TICKS = (int)(271/1.5);
     int INTAKE_TICKS = 0;
     int LOW_TICKS = (int)(2063/1.5);
-    int MID_TICKS = (int)(3300/1.5);
+    int MID_TICKS = (int)(3400/1.5);
     int HIGH_TICKS = (int)(4900/1.5);
 
 
@@ -174,7 +174,7 @@ public class RightCompCode extends LinearOpMode {
         Trajectory poleMid = drive.trajectoryBuilder(stack.end())
                 .lineTo(new Vector2d(12, -12))
                 .build();
-        Trajectory pole = drive.trajectoryBuilder(poleMid.end())
+        Trajectory pole = drive.trajectoryBuilder(poleMid.end()) //
                 .lineToLinearHeading(new Pose2d(19, -19, Math.toRadians(315)))
                 .build();
         Trajectory poleBack = drive.trajectoryBuilder(pole.end())
